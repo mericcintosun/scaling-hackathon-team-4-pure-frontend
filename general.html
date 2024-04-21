@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/general.css" />
+    <link rel="icon" type="image/x-icon" href="assets/img/trustify-logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Trustify</title>
+  </head>
+  <body>
+    <header class="container">
+      <div class="logo__box">
+        <img
+          src="assets/img/trustify-logo.png"
+          class="logo__img"
+          id="logoId"
+          alt=""
+        />
+        <p class="logo__text">Trustify</p>
+      </div>
+      <div class="right-header">
+        <div class="connect-wallet">
+          <button class="wallet__btn" id="wallet-btn">Connect Wallet</button>
+        </div>
+        <div class="search">
+          <form action="#" class="search__form">
+            <input
+              type="search"
+              placeholder="Search"
+              name="search"
+              class="search__bar"
+            />
+            <button type="submit" class="search__btn">Search</button>
+          </form>
+        </div>
+        <div class="language-selector">
+          <div class="selected-language" onclick="toggleLanguageMenu()">
+            <box-icon name="world" class="language-icon"></box-icon>
+          </div>
+          <ul class="language-list" id="languageList">
+            <li><a href="#">Türkçe</a></li>
+            <li><a href="#">English</a></li>
+            <li><a href="#">Español</a></li>
+            <li><a href="#">Français</a></li>
+            <!-- İstediğiniz kadar dil ekleyebilirsiniz -->
+          </ul>
+        </div>
+        <div class="button-container">
+          <button class="sign-in-button">Giriş Yap</button>
+          <button class="sign-up-button">Kayıt Ol</button>
+        </div>
+      </div>
+    </header>
+    <div class="section">
+      <div class="sidebar">
+        <ul class="menu">
+          <li>
+            <a href="#" class="menu-link" data-target="home"
+              ><box-icon
+                name="home"
+                class="nav__item__icon"
+                style="fill: #4281c8"
+              ></box-icon>
+              <span style="color: #4281c8; font-weight: bold">Home</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="menu-link" data-target="search"
+              ><box-icon name="search" class="nav__item__icon"></box-icon>
+              <span>Search</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="menu-link" data-target="vote"
+              ><box-icon name="upvote" class="nav__item__icon"></box-icon>
+              <span>Vote</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="menu-link" data-target="notifications"
+              ><box-icon name="bell" class="nav__item__icon"></box-icon>
+              <span>Notifications</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="menu-link" data-target="profile"
+              ><box-icon name="user" class="nav__item__icon"></box-icon>
+              <span>Profile</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="menu-link" data-target="more"
+              ><box-icon
+                name="dots-horizontal-rounded"
+                class="nav__item__icon"
+              ></box-icon>
+              <span>More</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="menu-link" data-target="settings"
+              ><box-icon name="cog" class="nav__item__icon"></box-icon>
+              <span>Settings</span></a
+            >
+          </li>
+          <button class="add__btn" id="add-btn">Add</button>
+          <div class="profile__box">
+            <img src="assets/img/avatar.jpg" class="avatar" />
+            <div class="avatar__txt">
+              <p style="font-weight: bold">Meric MDZ</p>
+              <p>@mericcintosun</p>
+            </div>
+          </div>
+          <div class="help__box">
+            <box-icon name="help-circle"></box-icon>
+            <p>Help</p>
+          </div>
+        </ul>
+      </div>
+      <div class="right-section">
+        <h1 class="right__title" style="font-size: 1.5rem;">Activities</h1>
+        <div class="card-section">
+          <h2 style="font-weight: bold">#Best Accounts</h2>
+          <div class="card">
+            <div class="avatar-section">
+              <img src="assets/img/avatar.jpg" class="avatar" />
+              <div class="rate">
+                <p>Meric Cintosun</p>
+                <box-icon name="star" class="star"></box-icon>
+                <box-icon name="star" class="star"></box-icon>
+                <box-icon name="star" class="star"></box-icon>
+                <box-icon name="star" class="star"></box-icon>
+                <box-icon name="star" class="star"></box-icon>
+              </div>
+            </div>
+            <div class="avatar-section">
+              <img src="assets/img/avatar.jpg" class="avatar" />
+              <div class="rate">
+                <p>Meric Cintosun</p>
+                <box-icon name="star" class="star"></box-icon>
+                <box-icon name="star" class="star"></box-icon>
+                <box-icon name="star" class="star"></box-icon>
+                <box-icon name="star" class="star"></box-icon>
+                <box-icon name="star" class="star"></box-icon>
+              </div>
+              
+            </div>
+            
+          </div>
+          <p class="see-all">See all</p>
+        </div>
+        <div class="card-section">
+          <h2 style="font-weight: bold">#Scam Contacts</h2>
+          <div class="card">
+            <div class="avatar-section">
+              <img src="assets/img/avatar.jpg" class="avatar" />
+              <div class="rate">
+                <p>Meric Cintosun</p>
+                <box-icon name="star" class="star"></box-icon>
+                <box-icon name="star" class="star"></box-icon>
+                <box-icon name="star" class="star"></box-icon>
+                <box-icon name="star" class="star"></box-icon>
+                <box-icon name="star" class="star"></box-icon>
+              </div>
+            </div>
+            <div class="avatar-section">
+              <img src="assets/img/avatar.jpg" class="avatar" />
+              <div class="rate">
+                <p>Meric Cintosun</p>
+                <box-icon name="star" class="star"></box-icon>
+                <box-icon name="star" class="star"></box-icon>
+                <box-icon name="star" class="star"></box-icon>
+                <box-icon name="star" class="star"></box-icon>
+                <box-icon name="star" class="star"></box-icon>
+              </div>
+              
+            </div>
+           
+          </div>
+          <p class="see-all-two">See all</p>
+        </div>
+        <div class="card-section">
+          <h2 style="font-weight: bold">#Scam Contacts</h2>
+          <div class="card">
+            <div class="avatar-section">
+              <img src="assets/img/avatar.jpg" class="avatar" />
+              <div class="rate">
+                <p>Meric Cintosun</p>
+                <box-icon name="star" class="star"></box-icon>
+                <box-icon name="star" class="star"></box-icon>
+                <box-icon name="star" class="star"></box-icon>
+                <box-icon name="star" class="star"></box-icon>
+                <box-icon name="star" class="star"></box-icon>
+              </div>
+            </div>
+            <div class="avatar-section">
+              <img src="assets/img/avatar.jpg" class="avatar" />
+              <div class="rate">
+                <p>Meric Cintosun</p>
+                <box-icon name="star" class="star"></box-icon>
+                <box-icon name="star" class="star"></box-icon>
+                <box-icon name="star" class="star"></box-icon>
+                <box-icon name="star" class="star"></box-icon>
+                <box-icon name="star" class="star"></box-icon>
+              </div>
+              
+            </div>
+           
+          </div>
+          <p class="see-all-two">See all</p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <script src="assets/js/main.js"></script>
+</html>
